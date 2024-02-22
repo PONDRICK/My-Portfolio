@@ -78,12 +78,24 @@ document.querySelectorAll("nav ul li a").forEach(function (link) {
     scrollToSection(sectionId); // Scroll to the middle of the section
   });
 });
-document.addEventListener("mousemove", function (e) {
-  const x = e.clientX / window.innerWidth;
-  const y = e.clientY / window.innerHeight;
+var controller = new ScrollMagic.Controller();
 
-  // Update background gradient position based on mouse position
-  document.querySelector(
-    ".interactive-background"
-  ).style.backgroundPosition = `${x * 100}% ${y * 100}%`;
-});
+new ScrollMagic.Scene({
+  triggerElement: "#home",
+  triggerHook: 0,
+  duration: "100%",
+})
+  .setPin("#home")
+  .addIndicators()
+  .setTween("#home-bg", { y: "-50%", ease: "linear" })
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: "#about",
+  triggerHook: 0,
+  duration: "100%",
+})
+  .setPin("#about")
+  .addIndicators()
+  .setTween("#about-bg", { y: "-50%", ease: "linear" })
+  .addTo(controller);

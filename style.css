@@ -138,7 +138,9 @@ footer {
   flex: 1;
   font-size: 24px;
 }
-
+.profile-text p {
+  font-size: 20px;
+}
 .profile-image {
   margin-left: 20px;
 }
