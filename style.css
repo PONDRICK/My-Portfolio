@@ -27,19 +27,22 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 40px; /* Increase margin-right to add more space between items */
+  margin-right: 40px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
   color: #ccc;
 }
-
+a {
+  text-decoration: none;
+}
 main {
   padding: 20px;
 }
@@ -53,6 +56,7 @@ main {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 h1,
@@ -93,19 +97,24 @@ footer {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
+.skills-grid li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 .project-card {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card h3 {
@@ -115,4 +124,78 @@ footer {
 .project-card p {
   color: #777;
   margin-bottom: 10px;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  flex: 1;
+  font-size: 24px;
+}
+
+.profile-image {
+  margin-left: 20px;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #5f430e;
+}
+#goToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#goToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+#goToTopBtn.show {
+  display: block;
 }
