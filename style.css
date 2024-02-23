@@ -137,22 +137,22 @@ footer {
 }
 
 .profile-text {
-  margin-top: 20px; /* Add some space above the profile text */
-  text-align: center; /* Center-align the text */
+  margin-top: 20px;
+  text-align: center;
 }
 
 .text-container {
-  margin-bottom: 20px; /* Add some space below the text container */
+  margin-bottom: 20px;
 }
 
 .profile-text h1 {
-  font-size: 36px; /* Decrease the font size for the name */
-  margin-bottom: 10px; /* Add some space below the name */
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .profile-text p {
-  font-size: 18px; /* Decrease the font size for the paragraphs */
-  margin: 5px 0; /* Add some vertical margin to the paragraphs */
+  font-size: 18px;
+  margin: 5px 0;
 }
 .profile-image {
   margin-left: 20px;
@@ -165,9 +165,9 @@ footer {
 }
 .project-card img {
   width: 100%;
-  height: 200px; /* Adjust the height as needed */
+  height: 200px;
   object-fit: cover;
-  border-radius: 5px 5px 0 0; /* Add border radius to the top corners */
+  border-radius: 5px 5px 0 0;
 }
 html {
   scroll-behavior: smooth;
@@ -221,12 +221,12 @@ html {
   display: block;
 }
 .text-container {
-  height: auto; /* Adjust the height as needed */
-  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Align items vertically */
+  flex-direction: column;
 }
 
 .text-container h1 {
