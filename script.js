@@ -70,11 +70,10 @@ function scrollToSection(sectionId) {
   });
 }
 
-// Add event listeners to nav links
 document.querySelectorAll("nav ul li a").forEach(function (link) {
   link.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor behavior
-    var sectionId = link.getAttribute("href").slice(1); // Get section id from href
-    scrollToSection(sectionId); // Scroll to the middle of the section
+    event.preventDefault();
+    var sectionId = link.getAttribute("href").slice(1);
+    scrollToSection(sectionId);
   });
 });
